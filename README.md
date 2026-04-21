@@ -21,4 +21,4 @@ Se us처 fetch para hacer las peticiones y async/await para que el c처digo sea m�
 
 Dificultades
 
-Cost처 entender bien la estructura del JSON, manejar los errores correctamente y organizar el c처digo sin mezclar todo en un solo componente.
+Cost처 entender bien la estructura del JSON, manejar los errores correctamente y organizar el c처digo sin mezclar todo en un solo componente."# Tp4efsi_Turquie"  
