@@ -1,11 +1,14 @@
+// URL base de la PokeAPI
 const API_BASE = 'https://pokeapi.co/api/v2'
 
+// Obtiene un Pokémon por nombre o id
 export async function fetchPokemonByNameOrId(query) {
   const res = await fetch(`${API_BASE}/pokemon/${query.toLowerCase()}`)
   if (!res.ok) throw new Error(`Pokémon no encontrado: ${query}`)
   return res.json()
 }
 
+// Obtiene una lista de pokémons y sus detalles básicos
 export async function fetchPokemonList(limit = 50, offset = 0) {
   const res = await fetch(`${API_BASE}/pokemon?limit=${limit}&offset=${offset}`)
   if (!res.ok) throw new Error('Error al obtener la lista')
@@ -25,6 +28,7 @@ export async function fetchPokemonList(limit = 50, offset = 0) {
   return details
 }
 
+// Obtiene información de un tipo (fire, water, etc.)
 export async function fetchTypeInfo(typeName) {
   const res = await fetch(`${API_BASE}/type/${typeName}`)
   if (!res.ok) throw new Error('Tipo no encontrado')
