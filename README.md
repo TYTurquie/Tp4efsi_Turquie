@@ -20,4 +20,4 @@ Usé fetch para hacer las peticiones y async/await para que el código sea más 
 
 Dificultades:
 
-Me costó entender bien los datos que devuelve la API, manejar los errores correctamente y organizar el código sin mezclar todo en un solo componente.
+Me costó entender bien los datos que devuelve la API, manejar los errores correctamente y organizar el código sin mezclar todo en un solo componente
